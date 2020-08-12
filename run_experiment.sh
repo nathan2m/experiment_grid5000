@@ -5,8 +5,9 @@ if which node > /dev/null
     then
         echo "node is installed..."
     else
-        echo "installng nodejs..."
-        sudo apt install nodejs -y
+        echo "installing nodejs..."
+        curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -
+        sudo yum install nodejs
 fi
 
 echo "Leitura dos dados:"
