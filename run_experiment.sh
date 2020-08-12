@@ -12,10 +12,10 @@ fi
 echo "Leitura dos dados:"
 echo ""
 echo "GitHub:"
-time node github.js
+(time node code/github.js) |& tee results/github.txt
 echo ""
 echo "TopCoder:"
-time node topcoder.js
+(time node code/topcoder.js) |& tee results/topcoder.txt
 echo ""
 echo "StackOverflow:"
-time node stackoverflow.js
+(time node code/stackoverflow.js) |& tee results/stackoverflow.txt

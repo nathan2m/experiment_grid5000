@@ -127,7 +127,7 @@ function getChartGeral(u){
     scatterChart("#scatterQuestion", dataQuestions, "Questions", "Tag name", mouseover); */
 }
 
-const usersSO = require("./StackOverflow_Users.json");
+const usersSO = require("../data/StackOverflow_Users.json");
 for (let i = 0; i < usersSO.length; i++) {
     fetchData(usersSO[i]);
 }

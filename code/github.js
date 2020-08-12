@@ -210,7 +210,7 @@ function getGraphGeralForgetting(u) {
     forgettingChart("#forgettingChartFuture", datasFuturo, "Forgetting Curve (Future)", "Value", true); */
 }
 
-const usersGH = require("./GitHub_Users.json");
+const usersGH = require("../data/GitHub_Users.json");
 for (let i = 0; i < usersGH.length; i++) {
     fetchData(usersGH[i]);
 }

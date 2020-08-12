@@ -135,7 +135,7 @@ function getChartGeral(u) {
     scatterChart("#scatter", data, "Challenges", "SubTrack", mouseover); */
 }
 
-const usersTC = require("./TopCoder_Users.json");
+const usersTC = require("../data/TopCoder_Users.json");
 for (let i = 0; i < usersTC.length; i++) {
     fetchData(usersTC[i]);
 }
